@@ -61,7 +61,7 @@
             <div class="col-lg-6 mt-5">
                 <h1 class="display-5"><?= $feature2->header ?></h1>
                 <p style="font-size: large;" class="text-left mb-0"><?= $feature2->konten ?></p>
-                <a href="<?= base_url() . $this->uri->segment(1) ?>/artikel/sandwich-generation" class="btn btn-outline-warning px-5 rounded-pill shadow-sm mt-5 ">GET STARTED</a>
+                <a href="<?= base_url() . $this->uri->segment(1) ?>/artikel/sandwich-generation" class="btn btn-outline-warning px-5 rounded-pill shadow-sm mt-5 ">Learn More</a>
             </div>
         </div>
         <hr>
@@ -92,11 +92,23 @@
     <div class="bg-white py-5">
         <div class="container py-5">
             <div class="row">
-                <?php foreach ($feature4 as $data) { ?>
+                <?php
+                $i = 0;
+                foreach ($feature4 as $data) {
+                    $i++;
+                ?>
                     <div class="col-md-4 border-right">
                         <h2 class="display-6"><?= $data->header ?></h2>
                         <p style="font-size: 16px;" class="text-left mb-5"><?= $data->konten ?>.</p>
-                        <a href="<?= base_url() . $this->uri->segment(1) ?>/resource" class="btn btn-light mt-5 text-warning">LEARN MORE</a>
+                        <?php
+                        if ($i == 1) { ?>
+                            <a href="<?= base_url() . $this->uri->segment(1)  ?>/artikel/inflasi" class="btn btn-outline-light mt-5 text-warning">PELAJARI LEBIH</a>
+                        <?php } elseif ($i == 2) { ?>
+                            <a href="<?= base_url() . $this->uri->segment(1)  ?>/artikel/bunga-majemuk" class="btn btn-outline-light mt-5 text-warning">PELAJARI LEBIH</a>
+                        <?php } elseif ($i == 3) { ?>
+                            <a href="<?= base_url() . $this->uri->segment(1)  ?>/artikel/resiko-vs-hasil" class="btn btn-outline-light mt-5 text-warning">PELAJARI LEBIH</a>
+                        <?php }
+                        ?>
                     </div>
                 <?php   } ?>
             </div>

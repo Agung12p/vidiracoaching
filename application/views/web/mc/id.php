@@ -42,7 +42,7 @@
                     <div class="col-lg-6 mt-5">
                         <h1 class="display-5"><?= $key->header ?></h1>
                         <p style="font-size: large ;" class="text-left mb-0"><?= $key->konten ?></p>
-                        <a href="<?= base_url() ?>id/contact" class="btn btn-outline-warning px-5 rounded-pill shadow-sm mt-5 text-center">Polling Money Block</a>
+                        <button type="button" class="mt-5 text-center btn btn-lg btn-warning text-dark" data-toggle="modal" data-target=".bd-example-modal-lg">Polling Money Blocks</button>
                         <!-- <a href="<?= base_url() ?>id/contact" class="btn btn-outline-light px-5 rounded-pill shadow-sm mt-5 text-dark">LEARN MORE <i class="fas fa-check"></i></a> -->
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                 <?php  } ?>
             </div>
             <div class="text-center text-dark mt-5">
-                <h3>MULAI PERJALANAN DENGAN</h3>
+                <h1>MULAI PERJALANAN ANDA DENGAN</h1>
             </div>
             <div class="text-center">
                 <a href="<?= base_url() . $this->uri->segment(1) ?>/moneytype" class="btn btn-outline-warning px-5 rounded-pill shadow-sm mt-5 mb-5">FREE MONEY QUIZ</a>
@@ -123,3 +123,140 @@
         </div>
     </div>
 </section>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">POLLING MONEY MENTAL BLOCK</h5>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <form id="polling" action="<?= base_url() ?>main/polling" method="post">
+                        <div class="form-group mb-1">
+                            <input class="form-control form-control" name="nama" required type="text" title="Kami membutuhkan nama anda" placeholder="Siapa nama anda?">
+                            <label for="name"></label>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-group mb-1">
+                            <input class="form-control form-control" name="email" type="email" placeholder="Alamat email">
+                            <label for="email"></label>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-group mb-1">
+                            <input class="form-control form-control" name="phone" minlength="10" min="0" type="number" placeholder="Nomer Telepon/Whatsapp">
+                            <label for="phone"></label>
+                        </div>
+                        <div class="row justify-content-center">
+                            <h6 style="font-size: 18px;" class="text-center mb-5">Silahkan memilih Money Mental Block mana yang saat ini masih Anda miliki <br> (boleh memilih lebih dari satu):</h6>
+                            <div class="col-md-6">
+                                <div class="form-group mb-2">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="kata1" id="kata1" value="Saya tidak berani/layak punya income besar">
+                                            Saya tidak berani/layak punya income besar
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="kata2" id="kata2" value="Saya tidak bisa menabung tiap bulan (uang selalu habis)">
+                                            Saya tidak bisa menabung tiap bulan (uang selalu habis)
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="kata3" id="kata3" value="Uang tidak membawa bahagia/uang sumber masalah">
+                                            Uang tidak membawa bahagia/uang sumber masalah
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="kata4" id="kata4" value="Cari uang itu susah/uang tidak tertarik dengan saya">
+                                            Cari uang itu susah/uang tidak tertarik dengan saya
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="kata5" id="kata5" value="Saya tidak tahu/bisa/pintar atur uang">
+                                            Saya tidak tahu/bisa/pintar atur uang
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="kata6" id="kata6" value="Uang/orang kaya itu jahat">
+                                            Uang/orang kaya itu jahat
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-2">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="kata7" id="kata7" value="Uang gak perlu diatur/direncanakan, yang penting ada uang masuk">
+                                            Uang gak perlu diatur/direncanakan, yang penting ada uang masuk
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="kata8" id="kata8" value="Saya tidak butuh uang">
+                                            Saya tidak butuh uang
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="kata9" id="kata9" value="Kaya raya = bahagia/sukses">
+                                            Kaya raya = bahagia/sukses
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="kata10" id="kata10" value="Tidak ada istilah cukup uang">
+                                            Tidak ada istilah cukup uang
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="kata11" id="kata11" value="Saya harus pelit pada diri sendiri">
+                                            Saya harus pelit pada diri sendiri
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group mb-2">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="kata12" id="kata12" value="Orang mau berteman dengan saya hanya jika saya memiliki banyak uang">
+                                            Orang mau berteman dengan saya hanya jika saya memiliki banyak uang
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-5">
+                            <button type="button" class="btn btn-light" data-dismiss="modal">Tutup</button>
+                            <button type="submit" class="btn btn-outline-warning text-dark ml-1">Kirim
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

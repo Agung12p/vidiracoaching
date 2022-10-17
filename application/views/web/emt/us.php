@@ -41,7 +41,7 @@
             <div class="col-lg-6">
                 <h1 class="display-4"><?= $emt->feature ?></h1>
                 <p style="font-size: large;" class="text-left mb-0"><?= $emt->sub_feature ?></p>
-                <a href="<?= base_url() ?>contact" class="btn btn-outline-warning px-5 rounded-pill shadow-sm mt-5 ">GET STARTED</a>
+                <!-- <a href="<?= base_url() ?>contact" class="btn btn-outline-warning px-5 rounded-pill shadow-sm mt-5 ">GET STARTED</a> -->
             </div>
             <div class="col-lg-6 mt-5 d-lg-block"><img width="700px" src="<?= base_url() ?>assets/assets/img/<?= $emt->img_feature ?>" alt="" class="img-fluid"></div>
         </div>
