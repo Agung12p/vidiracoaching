@@ -66,16 +66,14 @@
                 <div class="col-md-8">
                     <h2 class="mb-3">Frequently Asked Questions</h2>
                     <?php foreach ($faq as $key) : ?>
-                        <?php $name = str_replace(' ', '_', $key->tanya); ?>
-                        <?php $id = str_replace('?', '', $name); ?>
                         <div class="accordion accordion-type-2 accordion-flush" id="faq">
                             <div class="card mt-2">
                                 <div class="card-header d-flex justify-content-between">
-                                    <a class="collapsed" role="button" data-toggle="collapse" href="#<?= $id ?>" aria-expanded="false">
+                                    <a class="collapsed" role="button" data-toggle="collapse" href="#kamukita<?= $key->id_faq ?>" aria-expanded="false">
                                         <h4><?= $key->tanya ?></h4>
                                     </a>
                                 </div>
-                                <div id="<?= $id ?>" class="collapse" data-parent="#faq">
+                                <div id="kamukita<?= $key->id_faq ?>" class="collapse" data-parent="#faq">
                                     <div class="card-body">
                                         <p style="font-size: large;"> <?= $key->jawab ?></p>
                                     </div>
