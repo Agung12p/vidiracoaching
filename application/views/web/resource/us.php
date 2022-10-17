@@ -33,7 +33,7 @@
                     <div class="row">
                         <?php foreach ($resource_us as $data) { ?>
                             <div class="col-md-6 mt-2">
-                                <a href="<?= base_url() ?>id/artikel/<?= $data->slug ?>">
+                                <a href="<?= base_url() ?>artikel/<?= $data->slug ?>">
                                     <div class="card text-white" style="max-width: 600px;">
                                         <img src="<?= base_url() ?>assets/assets/blog/<?= $data->img ?>" class="card-img" alt="Stony Beach" />
                                         <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.3)">

@@ -59,9 +59,9 @@
             <div class="col-lg-5 d-lg-block"><img width="550px" src="<?= base_url() ?>assets/assets/img/<?= $feature2->img ?>" alt="" class="img-fluid"></div>
             <div class="col-md-1"></div>
             <div class="col-lg-6 mt-5">
-                <h1 class="display-4"><?= $feature2->header ?></h1>
+                <h1 class="display-5"><?= $feature2->header ?></h1>
                 <p style="font-size: large;" class="text-left mb-0"><?= $feature2->konten ?></p>
-                <a href="<?= base_url() ?>resource" class="btn btn-outline-warning px-5 rounded-pill shadow-sm mt-5 ">GET STARTED</a>
+                <a href="<?= base_url() ?>artikel/sandwich-generation" class="btn btn-outline-warning px-5 rounded-pill shadow-sm mt-5 ">GET STARTED</a>
             </div>
         </div>
         <hr>
