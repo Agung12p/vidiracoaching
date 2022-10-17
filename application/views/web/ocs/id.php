@@ -36,7 +36,7 @@
             <div class="col-lg-6">
                 <h1 class="display-4"><?= $ocs->feature_id ?></h1>
                 <p style="font-size: large;" class="text-left mb-0"><?= $ocs->sub_feature_id ?></p>
-                <a href="<?= base_url() . $this->uri->segment(1)  ?>/contact" class="btn btn-outline-warning px-5 rounded-pill shadow-sm mt-5 ">MULAI</a>
+                <!-- <a href="<?= base_url() . $this->uri->segment(1)  ?>/contact" class="btn btn-outline-warning px-5 rounded-pill shadow-sm mt-5 ">MULAI</a> -->
             </div>
             <div class="col-lg-6 pt-5 mt-5 d-lg-block"><img src="<?= base_url() ?>assets/assets/img/<?= $ocs->img_feature ?>" alt="" class="img-fluid"></div>
         </div>
