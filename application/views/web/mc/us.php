@@ -100,7 +100,7 @@
             <div class="col-lg-6 text-left mt-5 d-lg-block">
                 <img src="<?= base_url() ?>assets/assets/img/<?= $header3->img ?>" alt="" class="img-fluid">
             </div>
-            <div class="col-lg-6  mt-3">
+            <div class="col-lg-6  mt-4">
                 <p style="font-size: 20px;" class="text-left mb-0"><?= $header3->konten ?></p>
                 <?php foreach ($feature3 as $key) { ?>
                     <div class="row">
