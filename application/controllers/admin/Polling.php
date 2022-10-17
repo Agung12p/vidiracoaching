@@ -96,7 +96,7 @@ class polling extends CI_Controller
             $row[] = $data1->phone;
             $row[] = '
             <a class="btn btn-sm btn-outline-info" href="' . base_url('admin/polling/detail/' . $data1->id_user) . '" title="Detail"><i class="fas fa-info"></i></a>
-            <a class="btn btn-sm btn-outline-danger table_user" href="' . base_url('admin/polling/ajax_delete/' . $data1->id_user) . '" title="Detail"><i class="fa fa-times"></i></a>
+            <a class="btn btn-sm btn-outline-danger table_user" href="' . base_url('admin/polling/ajax_delete/' . $data1->id_user) . '" title="Hapus"><i class="fa fa-times"></i></a>
             ';
             // <a class="btn btn-sm btn-outline-success" href="' . base_url('admin/polling/excel/' . $data1->id_user) . '" title="Excel"><i class="fas fa-file-excel"></i></a>
             $data[] = $row;

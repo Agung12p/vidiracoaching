@@ -51,7 +51,7 @@
                                                     <a href="javascript:;" data-email="<?= $data->email ?>" data-toggle="modal" data-target="#edit-email">
                                                         <button data-toggle="modal" data-target="#ubah-data" class="btn btn-info"><i class="far fa-envelope"></i></button>
                                                     </a>
-                                                    <a class="btn btn-sm btn-outline-danger table_user" href="<?= base_url('admin/contact/ajax_delete/' . $data->id_subs) ?>" title="Detail"><i class="fa fa-times"></i></a>
+                                                    <a class="btn btn-sm btn-outline-danger table_user" href="<?= base_url('admin/contact/ajax_delete/' . $data->id_subs) ?>" title="Hapus"><i class="fa fa-times"></i></a>
                                                 </td>
                                             </tr>
                                         <?php }
