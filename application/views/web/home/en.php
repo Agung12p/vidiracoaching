@@ -59,9 +59,10 @@
                 background-color: orange;
             }
         }
-           p {
-   line-height:1.25;
-}
+
+        p {
+            line-height: 1.25;
+        }
     </style>
     <header class="navigation fixed-top" id="navi">
         <div class="container-fluid">
@@ -137,7 +138,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 text-left">
-                                <h1 style="color:<?= $data->color ?>; font-size: <?= $data->font_size ?>px; text-shadow: black 0.1em 0.1em 0.2em;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1"><?= $data->masthead_us ?></h1>
+                                <h1 style="color:<?= $data->color ?>; font-size: <?= $data->font_size ?>px;line-height:1.3 ; text-shadow: black 0.1em 0.1em 0.2em;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1"><?= $data->masthead_us ?></h1>
                             </div>
                         </div>
                     </div>
@@ -147,7 +148,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 text-left">
-                                <h1 style="color:<?= $data->color ?>; font-size: <?= $data->font_size ?>px; text-shadow: black 0.1em 0.1em 0.2em;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1"><?= $data->masthead_us ?></h1>
+                                <h1 style="color:<?= $data->color ?>; font-size: <?= $data->font_size ?>px;line-height:1.3 ; text-shadow: black 0.1em 0.1em 0.2em;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1"><?= $data->masthead_us ?></h1>
                             </div>
                         </div>
                     </div>
@@ -380,8 +381,8 @@
                             <div class="col-10">
                                 <p style="font-size: medium;">
                                     <?php
-                                echo $contact->phone;
-                                ?>
+                                    echo $contact->phone;
+                                    ?>
                                 </p>
                             </div>
                         </div>
