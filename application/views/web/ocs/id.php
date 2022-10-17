@@ -51,7 +51,7 @@
                     $i++
                 ?>
                     <div class="col-md-4 border-right border-left">
-                        <h2 class="display-6"><?= $data->header ?></h2>
+                        <h1><?= $data->header ?></h1>
                         <p style="font-size: large;" class="text-left mb-5"><?= $data->konten ?></p>
                         <?php
                         if ($i == 1) { ?>
