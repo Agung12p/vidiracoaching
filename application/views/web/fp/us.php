@@ -120,8 +120,8 @@
             <div class="d-flex align-items-center h-100">
                 <div class="container">
                     <div class="text-white">
-                        <p style="font-size: 32px; " class="text-center mt-5"><?= $header_feature5->header ?></p>
-                        <h1 class="text-center display-5 mt-5"><strong><?= $header_feature5->konten ?></strong> </h1>
+                        <p style="font-size: 32px;" class="text-center mt-5"><?= $header_feature5->header ?></p>
+                        <h1 class="text-center display-6 mt-5"><strong><?= $header_feature5->konten ?></strong> </h1>
                     </div>
                     <div class="row mt-5 mb-5">
                         <?php foreach ($feature5 as $data) { ?>

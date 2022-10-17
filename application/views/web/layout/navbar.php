@@ -10,7 +10,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <?php if ($this->uri->segment(1) != "id") { ?>
                         <ul class="navbar-nav navbar-logo mx-auto">
-                            <li class="nav-item mx-0 mx-lg-1"><a class="text-dark nav-link rounded" href="<?= base_url() ?>">Home</a></li>
+                            <li class="nav-item mx-0 mx-lg-1"><a class="text-dark nav-link rounded" href="<?= base_url() ?>en">Home</a></li>
                             <li class="nav-item mx-0 mx-lg-1"><a class="text-dark nav-link rounded" href="<?= base_url() ?>about">About</a></li>
                             <li id="ocs1" class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -65,7 +65,7 @@
                         </ul>
                     <?php } else { ?>
                         <ul class="navbar-nav navbar-logo mx-auto">
-                            <li class="nav-item mx-0 mx-lg-1"><a class="text-dark nav-link rounded" href="<?= base_url() . $this->uri->segment(1) ?>/">Home</a></li>
+                            <li class="nav-item mx-0 mx-lg-1"><a class="text-dark nav-link rounded" href="<?= base_url() . $this->uri->segment(1) ?>">Home</a></li>
                             <li class="nav-item mx-0 mx-lg-1"><a class="text-dark nav-link rounded" href="<?= base_url() . $this->uri->segment(1) ?>/about">About</a></li>
                             <li id="ocs1" class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

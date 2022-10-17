@@ -53,7 +53,6 @@
                     <div class="col-lg-6 mt-5">
                         <h1 class="display-5"><?= $key->header ?></h1>
                         <p style="font-size: large;" class="text-left mb-0"><?= $key->konten ?></p>
-
                     </div>
                     <div class="col-lg-6 mt-3 d-lg-block"><img src="<?= base_url() ?>assets/assets/img/<?= $key->img ?>" alt="" class="img-fluid"></div>
                 </div>
@@ -68,8 +67,8 @@
             <div class="d-flex align-items-center h-100">
                 <div class="container">
                     <div class="text-white">
-                        <h1 class="text-center display-5 mt-5"><?= $header_feature->header ?></h1>
-                        <p style="font-size: large; " class="text-center  mt-5"><strong><?= $header_feature->konten ?></strong> </p>
+                        <p style="font-size: 32px;" class="text-center mt-5"><?= $header_feature->header ?></p>
+                        <h5 class="text-center display-6 mt-5"><strong><?= $header_feature->konten ?></strong> </h5>
                     </div>
                     <div class="row mt-5 mb-5">
                         <?php foreach ($feature2 as $key) { ?>
