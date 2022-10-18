@@ -63,6 +63,7 @@
         p {
             line-height: 1.5;
             color: black;
+            font-size: large;
         }
     </style>
     <header class="navigation fixed-top" id="navi">
