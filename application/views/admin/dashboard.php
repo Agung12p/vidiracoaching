@@ -21,7 +21,7 @@
 
                         <div class="info-box-content">
                             <a style="color: black" href="<?= base_url() ?>admin/resource"><span class="info-box-text">Resource EN</span></a>
-                            <span class="info-box-number"><?php echo $this->db->count_all_results('blog'); ?></span>
+                            <span class="info-box-number"><?php echo $resource_us ?></span>
                         </div>
                         <!-- /.info-box-content -->
                     </div>
@@ -33,7 +33,7 @@
 
                         <div class="info-box-content">
                             <a style="color: black" href="<?= base_url() ?>admin/resource/id"><span class="info-box-text">Resource ID</span></a>
-                            <span class="info-box-number"><?php echo $this->db->count_all_results('blog_id'); ?></span>
+                            <span class="info-box-number"><?php echo $resource_id ?></span>
                         </div>
                         <!-- /.info-box-content -->
                     </div>
