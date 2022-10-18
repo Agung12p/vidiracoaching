@@ -19,7 +19,7 @@
                         <!-- /.card-header -->
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table id="table_user" class="table table-hover">
+                                <table id="table_user_polling" class="table table-hover">
                                     <thead>
                                         <tr>
                                             <th>No</th>
@@ -50,7 +50,7 @@
     var table;
     $(document).ready(function() {
         var token = "<?php echo $this->security->get_csrf_hash(); ?>";
-        table = $('#table_user').DataTable({
+        table = $('#table_user_polling').DataTable({
             "responsive": true,
             "lengthChange": false,
             "searching": true,

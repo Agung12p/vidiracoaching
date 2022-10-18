@@ -103,8 +103,8 @@ class polling extends CI_Controller
         }
         $output = array(
             "draw" => $this->input->post('draw'),
-            "recordsTotal" => $this->user->count_all(),
-            "recordsFiltered" => $this->user->count_filtered(),
+            "recordsTotal" => $this->polling->count_all(),
+            "recordsFiltered" => $this->polling->count_filtered(),
             "data" => $data,
         );
         $output[$csrf_name] = $csrf_hash;

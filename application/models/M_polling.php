@@ -5,7 +5,7 @@ class M_polling extends CI_Model
     public $table = "user_polling";
     var $column_order = array('id_user', 'nama', 'email', 'phone');
     var $column_search = array('id_user', 'nama', 'email', 'phone');
-    var $order = array('users.id_user' => 'DESC');
+    var $order = array('user_polling.id_user' => 'DESC');
     function __construct()
     {
         parent::__construct();
