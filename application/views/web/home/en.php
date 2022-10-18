@@ -124,6 +124,15 @@
                             </div>
                         </li>
                     </ul>
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                        <?php foreach ($sosmed as $key) { ?>
+                            <li class="nav-item">
+                                <a title="<?= $key->nama_sosmed ?>" target="_blank" href="<?= $key->link ?>" class="nav-link waves-effect waves-light">
+                                    <i class="<?= $key->icon ?>"></i>
+                                </a>
+                            </li>
+                        <?php  } ?>
+                    </ul>
                 </div>
             </nav>
             <!-- /main nav -->
