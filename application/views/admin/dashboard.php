@@ -56,7 +56,7 @@
                         <span class="info-box-icon bg-warning"> <a href="<?= base_url() ?>admin/resource/id"><i class="fas fa-user-lock"></i></a></span>
                         <div class="info-box-content">
                             <a style="color: black" href="<?= base_url() ?>admin/polling"><span class="info-box-text">User Polling Money Blocks</span></a>
-                            <span class="info-box-number"><?php echo $komen_id ?></span>
+                            <span class="info-box-number"><?php echo $this->db->count_all_results('user_polling'); ?></span>
                         </div>
                         <!-- /.info-box-content -->
                     </div>

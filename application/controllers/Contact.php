@@ -99,13 +99,17 @@ class Contact extends CI_Controller
             redirect('contact');
         }
     }
-    public function subs()
+    public function subs($id)
     {
         $data = array(
             'email' => $this->input->post('email', true)
         );
         $this->contact->create_subs($data);
         $this->session->set_flashdata('msg', 'Thank you for Subscribe');
-        redirect('main');
+        if ($id == 'id') {
+            redirect(base_url('id'));
+        } else {
+            redirect(base_url('en'));
+        }
     }
 }

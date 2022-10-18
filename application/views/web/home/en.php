@@ -174,7 +174,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="display-6 text"><?= $feature->header ?></span></h1>
+                    <h2 class="display-6 text" style="font-weight: normal;"><?= $feature->header ?></h2>
                     <p class="lead mb-0"><?= $feature->konten ?></p>
                 </div>
             </div> <!-- End row -->
@@ -195,7 +195,7 @@
 
     <section class="section py-0" id="ocs">
         <div class="container">
-            <h2 class="text-center mt-0"><?= $header_feature2->header ?></h2>
+            <h2 class="text-center mt-0" style="font-weight: normal;"><?= $header_feature2->header ?></h2>
             <p class="lead mb-3"><?= $header_feature2->konten ?></p>
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-4 col-md-6 text-center ">
@@ -420,7 +420,7 @@
                         <p style="font-size: medium;">
                             Subscribe to our latest news to be updated, we promise not to spam!
                         </p>
-                        <form id="subs" action="<?= base_url() ?>contact/subs" method="post">
+                        <form id="subs" action="<?= base_url() ?>contact/subs/en" method="post">
                             <div class="row mt-3">
                                 <div class="col-md-9">
                                     <input type="email" required title="Email required" placeholder="Your Email" class="form-control form-control-sm" name="email">

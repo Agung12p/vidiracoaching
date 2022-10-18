@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <!-- Themefisher Icon font -->
-    <link rel="stylesheet" href="<?= base_url() ?>assets/home/assets/plugins/themefisher-font/style.css">
+    <!-- <link rel="stylesheet" href="<?= base_url() ?>assets/home/assets/plugins/themefisher-font/style.css"> -->
     <!-- bootstrap.min css -->
     <link rel="stylesheet" href="<?= base_url() ?>assets/home/assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Lightbox.min css -->
@@ -174,8 +174,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="text"><?= $feature->header ?></span></h1>
-                    <p class="lead  mb-0"><?= $feature->konten ?></p>
+                    <h2 class="display-6" style="font-family: title;font-weight: normal;"><?= $feature->header ?></h2>
+                    <p class="lead mb-0"><?= $feature->konten ?></p>
                 </div>
             </div> <!-- End row -->
         </div> <!-- End container -->
@@ -195,8 +195,9 @@
 
     <section class="section py-0" id="ocs">
         <div class="container">
-            <h2 class="text-center mt-0"><?= $header_feature2->header ?></h2>
-            <p class="lead  mb-3"><?= $header_feature2->konten ?></p>
+
+            <h2 class="display-6 text-center" style="font-weight: normal;"><?= $header_feature2->header ?></h2>
+            <p class="lead mb-3"><?= $header_feature2->konten ?></p>
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-4 col-md-6 text-center ">
                     <div class="card shadow-lg h-100">
@@ -420,7 +421,7 @@
                         <p style="font-size: medium;">
                             Subscribe to our latest news to be updated, we promise not to spam!
                         </p>
-                        <form id="subs" action="<?= base_url() ?>contact/subs" method="post">
+                        <form id="subs" action="<?= base_url() ?>contact/subs/id" method="post">
                             <div class="row mt-3">
                                 <div class="col-md-9">
                                     <input type="email" required title="Email required" placeholder="Your Email" class="form-control form-control-sm" name="email">
