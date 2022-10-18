@@ -62,6 +62,7 @@
 
         p {
             line-height: 1.5;
+            color: black;
         }
     </style>
     <header class="navigation fixed-top" id="navi">
@@ -164,7 +165,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="display-6 text"><?= $feature->header ?></span></h1>
-                    <p style="font-size: 16px;" class="lead text-muted mb-0"><?= $feature->konten ?></p>
+                    <p style="font-size: 16px;" class="lead mb-0"><?= $feature->konten ?></p>
                 </div>
             </div> <!-- End row -->
         </div> <!-- End container -->
@@ -185,7 +186,7 @@
     <section class="section py-0" id="ocs">
         <div class="container">
             <h2 class="text-center mt-0"><?= $header_feature2->header ?></h2>
-            <p style="font-size: 16px;" class="lead text-muted mb-3"><?= $header_feature2->konten ?></p>
+            <p style="font-size: 16px;" class="lead mb-3"><?= $header_feature2->konten ?></p>
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-4 col-md-6 text-center ">
                     <div class="card shadow-lg h-100">
@@ -197,9 +198,9 @@
                                 <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
                                 <h3 class="h2 mb-2"><strong><?= $feature2->header_ocs ?></strong></h3>
                             </div>
-                            <p style="line-height: 2; font-size: 16px" class="text-muted mt-5"><?= $feature2->konten_ocs ?></p>
+                            <p style="line-height: 2; font-size: 16px" class=mt-5"><?= $feature2->konten_ocs ?></p>
                         </div>
-                        <div class="card-footer text-muted mx-auto mb-5">
+                        <div class="card-footer mx-auto mb-5">
                             <a href="<?= base_url() ?>one-coin-service" class="btn btn-outline-warning text-dark btn-md">LEARN MORE</a>
                         </div>
                     </div>
@@ -214,9 +215,9 @@
                                 <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
                                 <h3 class="h2 mb-2"><strong><?= $feature2->header_fp ?></strong></h3>
                             </div>
-                            <p style="line-height: 2; font-size: 16px" class="text-muted mt-5"><?= $feature2->konten_fp ?></p>
+                            <p style="line-height: 2; font-size: 16px" class=mt-5"><?= $feature2->konten_fp ?></p>
                         </div>
-                        <div class="card-footer text-muted mx-auto mb-5">
+                        <div class="card-footer mx-auto mb-5">
                             <a href="<?= base_url() ?>financial-planning" class="btn btn-outline-warning text-dark btn-md">LEARN MORE</a>
                         </div>
                     </div>
@@ -231,9 +232,9 @@
                                 <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
                                 <h3 class="h2 mb-2"><strong><?= $feature2->header_mc ?></strong></h3>
                             </div>
-                            <p style="line-height: 2; font-size: 16px" class="text-muted mt-5"><?= $feature2->konten_mc ?></p>
+                            <p style="line-height: 2; font-size: 16px" class=mt-5"><?= $feature2->konten_mc ?></p>
                         </div>
-                        <div class="card-footer text-muted mx-auto mb-5">
+                        <div class="card-footer mx-auto mb-5">
                             <a href="<?= base_url() ?>money-coaching" class="btn btn-outline-warning text-dark btn-md"> LEARN MORE</a>
                         </div>
                     </div>
