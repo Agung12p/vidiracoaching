@@ -422,23 +422,23 @@
 
                     </div>
                     <div class="col-lg-3 mt-3">
-                        <h4 class="text-uppercase mb-4">GALLERY</h4>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="galeri">
-                                    <!-- <div class="col-md-12"> -->
-                                    <?php if ($status_galeri->akses == 1) { ?>
+                        <?php if ($status_galeri->akses == 1) { ?>
+                            <h4 class="text-uppercase mb-4">GALLERY</h4>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="galeri">
+                                        <!-- <div class="col-md-12"> -->
                                         <?php foreach ($galeri as $data) { ?>
 
                                             <a href="<?= base_url() ?>assets/assets/galeri/<?= $data->img ?>" class="image-tile" data-abc="true">
                                                 <img width="70px" src="<?= base_url() ?>assets/assets/galeri/<?= $data->img ?>" alt="Vidira Gallery">
                                             </a>
                                         <?php  } ?>
-                                    <?php  } ?>
-                                    <!-- </div> -->
+                                        <!-- </div> -->
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php  } ?>
                     </div>
                 </div>
             </div> <!-- end container -->
