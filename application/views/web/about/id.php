@@ -10,14 +10,12 @@
 </div>
 <section class="page-section text-black mb-0">
     <div class="container">
-        <div class="row h-100 align-items-center py-5">
-            <div class="col-lg-5 mt-5">
-                <h1 class="display-6 text"><?= $about->header_profile_id ?></span></h1>
-                <p class="lead text-muted mb-3"><?= $about->profile_id ?></p>
-                <a href="<?= base_url() . $this->uri->segment(1) ?>/contact" class="btn btn-outline-warning px-5 rounded-pill mt-5 ">Hubungi Kami</a>
-              
+        <div class="row">
+            <div class="col-md-12">
+                <img style='float:right;background-size:cover margin-right:50px;' src="<?= base_url() ?>assets/assets/img/<?= $about->img_profile ?>" />
+                <h1 class="display-6 text mt-5"><?= $about->header_profile_id ?></span></h1>
+                <p style="font-size: large; line-height:1.5"><?= $about->profile_id ?></p>
             </div>
-            <div class="col-lg-7 mt-5 text-right"><img src="<?= base_url() ?>assets/assets/img/<?= $about->img_profile ?>" alt="" class="img-fluid"></div>
         </div>
     </div>
     <style>

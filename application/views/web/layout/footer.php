@@ -76,22 +76,22 @@
                 </form>
             </div>
             <div class="col-lg-3">
-                <h3 class="text-uppercase mb-4">GALLERY</h3>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="galeri">
-                            <!-- <div class="col-md-12"> -->
-                            <?php if ($status->akses == 1) { ?>
+                <?php if ($status->akses == 1) { ?>
+                    <h3 class="text-uppercase mb-4">GALLERY</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="galeri">
+                                <!-- <div class="col-md-12"> -->
                                 <?php foreach ($galeri as $data) { ?>
                                     <a href="<?= base_url() ?>assets/assets/galeri/<?= $data->img ?>" class="image-tile" data-abc="true">
                                         <img width="70px" src="<?= base_url() ?>assets/assets/galeri/<?= $data->img ?>" alt="Vidira Gallery">
                                     </a>
                                 <?php  } ?>
-                            <?php  } ?>
-                            <!-- </div> -->
+                                <!-- </div> -->
+                            </div>
                         </div>
                     </div>
-                </div>
+                <?php  } ?>
             </div>
         </div>
     </div>

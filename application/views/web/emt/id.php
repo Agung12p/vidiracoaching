@@ -51,7 +51,10 @@
         <div class="container py-5">
             <div class="row">
                 <?php
-                foreach ($type as $data) { ?>
+                $i = 0;
+                foreach ($type as $data) {
+                    $i++;
+                ?>
                     <div class="col-md-6 mb-3">
                         <div class="card h-100">
                             <div class="card-body">
@@ -59,7 +62,26 @@
                                 <p style="font-size: large;" class="mb-5"><?= $data->konten ?></p>
                             </div>
                             <div class="card-footer text-muted mx-auto mb-5">
-                                <a href="<?= base_url() . $this->uri->segment(1)  ?>/contact" class="btn btn-outline-dark btn-md">LEARN MORE</a>
+                                <?php
+                                if ($i == 1) { ?>
+                                    <a href="<?= base_url() . $this->uri->segment(1)  ?>/artikel/money-type-si-innocent" class="btn btn-outline-dark btn-md">LEARN MORE</a>
+                                <?php } elseif ($i == 2) { ?>
+                                    <a href="<?= base_url() . $this->uri->segment(1)  ?>/artikel/money-type-si-victim" class="btn btn-outline-dark btn-md">LEARN MORE</a>
+                                <?php } elseif ($i == 3) { ?>
+                                    <a href="<?= base_url() . $this->uri->segment(1)  ?>/artikel/money-type-si-warrior" class="btn btn-outline-dark btn-md">LEARN MORE</a>
+                                <?php } elseif ($i == 4) { ?>
+                                    <a href="<?= base_url() . $this->uri->segment(1)  ?>/artikel/money-type-si-martyr" class="btn btn-outline-dark btn-md">LEARN MORE</a>
+                                <?php } elseif ($i == 5) { ?>
+                                    <a href="<?= base_url() . $this->uri->segment(1)  ?>/artikel/money-type-si-fool" class="btn btn-outline-dark btn-md">LEARN MORE</a>
+                                <?php } elseif ($i == 6) { ?>
+                                    <a href="<?= base_url() . $this->uri->segment(1)  ?>/artikel/money-type-si-creatorartist" class="btn btn-outline-dark btn-md">LEARN MORE</a>
+                                <?php } elseif ($i == 7) { ?>
+                                    <a href="<?= base_url() . $this->uri->segment(1)  ?>/artikel/money-type-si-tyrant" class="btn btn-outline-dark btn-md">LEARN MORE</a>
+                                <?php } elseif ($i == 8) { ?>
+                                    <a href="<?= base_url() . $this->uri->segment(1)  ?>/artikel/money-type-si-magician" class="btn btn-outline-dark btn-md">LEARN MORE</a>
+                                <?php }
+                                ?>
+                                <!-- <a href="<?= base_url() . $this->uri->segment(1)  ?>/contact" class="btn btn-outline-dark btn-md">LEARN MORE</a> -->
                                 <!-- <a href="<?= base_url() . $this->uri->segment(1)  ?>/contact" class="btn btn-outline-light mt-5 text-warning">LEARN MORE</a> -->
                             </div>
                         </div>

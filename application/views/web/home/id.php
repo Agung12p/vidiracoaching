@@ -61,13 +61,13 @@
         }
 
         p {
-            line-height: 1.25;
+            line-height: 1.5;
         }
     </style>
     <header class="navigation fixed-top" id="navi">
         <div class="container-fluid">
             <!-- main nav -->
-            <nav class="navbar navbar-expand-lg navbar-light text-uppercase">
+            <nav class="navbar navbar-expand-lg navbar-light text-uppercase font-weight-bold">
                 <!-- logo -->
                 <a class="navbar-brand logo" href="<?= base_url() ?>">
                     <img src="<?= base_url() ?>assets/admin/assets/logo/<?= $logo->logo_footer ?>" width="180px" alt="">
@@ -163,8 +163,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="display-6 text"><?= $feature->header ?></span></h1>
-                    <p style="font-size: 16px;" class="lead text-muted mb-0"><?= $feature->konten ?></p>
+                    <h1 class="text"><?= $feature->header ?></span></h1>
+                    <p style="font-size: 16px; " class="lead text-muted mb-0"><?= $feature->konten ?></p>
                 </div>
             </div> <!-- End row -->
         </div> <!-- End container -->

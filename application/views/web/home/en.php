@@ -61,7 +61,7 @@
         }
 
         p {
-            line-height: 1.25;
+            line-height: 1.5;
         }
     </style>
     <header class="navigation fixed-top" id="navi">

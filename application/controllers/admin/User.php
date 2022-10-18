@@ -115,6 +115,7 @@ class User extends CI_Controller
             $row[] = '
             <a class="btn btn-sm btn-outline-info" href="' . base_url('admin/user/detail/' . $data1->id_user) . '" title="Detail"><i class="fas fa-info"></i></a>
             <a class="btn btn-sm btn-outline-success" href="' . base_url('admin/user/excel/' . $data1->id_user) . '" title="Excel"><i class="fas fa-file-excel"></i></a>
+            <a class="btn btn-sm btn-outline-danger" href="' . base_url('admin/user/delete/' . $data1->id_user) . '" title="Hapus"><i class="fa fa-times"></i></a>
             ';
             $data[] = $row;
         }
@@ -130,9 +131,9 @@ class User extends CI_Controller
     }
 
 
-    public function ajax_delete($id)
+    public function delete($id)
     {
-        $data = $this->user->hapus_user($id);
+        $this->db->delete('users', array('id_user' => $id));
         $this->session->set_flashdata('msg', 'Data berhasil dihapus');
         redirect('admin/user');
     }

@@ -83,7 +83,8 @@
         table.ajax.reload(null, false); //reload datatable ajax 
     }
 
-    function delete_pelanggan(id) {
+    function delete_user(id) {
+        // var id = obj.id;
         // CSRF hash
         swal({
             title: 'Apakah anda yakin?',
@@ -96,8 +97,9 @@
             closeOnConfirm: false
         }).then(function(isConfirm) {
             if (isConfirm) {
+
                 $.ajax({
-                    url: "<?php echo site_url('admin/pelanggan/ajax_delete/') ?>" + id,
+                    url: "<?php echo site_url('admin/user/ajax_delete/') ?>" + id,
                     type: "POST",
                     data: {
                         '<?php echo $this->security->get_csrf_token_name(); ?>': '<?php echo $this->security->get_csrf_hash(); ?>'
